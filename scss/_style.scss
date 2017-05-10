@@ -1,0 +1,285 @@
+body {
+    font-family: 'Courgette', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    //        display: flex;
+}
+
+$columns: 12;
+@media (min-width: 800px) {
+    @for $i from 1 through $columns {
+        .col-#{$i} {
+            width: 100%/$columns* $i;
+            float: left;
+        }
+    }
+}
+
+header {
+    background-image: url(../images/cinque-terre-1859688_1920.png);
+    height: 1000px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu_style {
+    margin-left: 4px;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+ul li {
+    display: inline;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+ul li a {
+    display: inline-block;
+    width: 19%;
+    padding: .75rem 0;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu_list_two:hover~hr {
+    margin-left: 19.5%;
+}
+
+.menu_list_three:hover~hr {
+    margin-left: 39%;
+    hr {
+        color: white;
+    }
+}
+
+.menu_list_four:hover~hr {
+    margin-left: 58%;
+}
+
+.menu_list_five:hover~hr {
+    margin-left: 77.5%;
+}
+
+hr {
+    height: .25rem;
+    width: 19%;
+    margin: 0;
+    background: rgba(77, 168, 32, 1);
+    background: -moz-linear-gradient(left, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77, 168, 32, 1)), color-stop(35%, rgba(255, 255, 255, 1)), color-stop(58%, rgba(246, 246, 246, 1)), color-stop(64%, rgba(246, 246, 246, 1)), color-stop(82%, rgba(235, 18, 36, 1)), color-stop(83%, rgba(235, 18, 36, 1)), color-stop(92%, rgba(235, 18, 36, 1)), color-stop(93%, rgba(235, 18, 36, 1)), color-stop(100%, rgba(235, 18, 36, 1)));
+    background: -webkit-linear-gradient(left, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    background: -o-linear-gradient(left, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    background: linear-gradient(to right, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4da820', endColorstr='#eb1224', GradientType=1);
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+.box_h1 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-size: 3.4em;
+}
+
+h1::after {
+    display: block;
+    text-align: center;
+    content: "";
+    background: rgba(77, 168, 32, 1);
+    background: -moz-linear-gradient(left, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77, 168, 32, 1)), color-stop(35%, rgba(255, 255, 255, 1)), color-stop(58%, rgba(246, 246, 246, 1)), color-stop(64%, rgba(246, 246, 246, 1)), color-stop(82%, rgba(235, 18, 36, 1)), color-stop(83%, rgba(235, 18, 36, 1)), color-stop(92%, rgba(235, 18, 36, 1)), color-stop(93%, rgba(235, 18, 36, 1)), color-stop(100%, rgba(235, 18, 36, 1)));
+    background: -webkit-linear-gradient(left, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    background: -o-linear-gradient(left, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    background: linear-gradient(to right, rgba(77, 168, 32, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(246, 246, 246, 1) 58%, rgba(246, 246, 246, 1) 64%, rgba(235, 18, 36, 1) 82%, rgba(235, 18, 36, 1) 83%, rgba(235, 18, 36, 1) 92%, rgba(235, 18, 36, 1) 93%, rgba(235, 18, 36, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4da820', endColorstr='#eb1224', GradientType=1);
+    height: 20px;
+    width: 300px;
+}
+
+// section one
+.over_box {
+    top: -160px;
+    position: absolute;
+    width: 50%;
+    height: 160px;
+    justify-content: center;
+    background-color: white;
+    left: 25%;
+    right: 25%;
+}
+
+.sec_one {
+    min-height: 600px;
+    position: relative;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 3em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.one_text {
+    padding: 10px;
+    span {
+        font-weight: bold;
+    }
+}
+
+.link_official {
+    color: green;
+    font-size: 2em;
+}
+
+
+  .map {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:480px;  
+   pointer-events: none;
+   
+}
+.map_scroll {
+    pointer-events: auto;
+}
+
+.sec_two {
+    //    background-image:url(../images/cinque-terre-1859688_1920.png);
+    background-image: url(../images/cinque-terre-828614_1280.png);
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.sec_three {
+    height: 1000px;
+}
+
+.three_style {
+    margin: 40px 0 20px 0;
+}
+
+.all_style {
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+.image_left_top {
+    width: 100%;
+    height: 470px;
+    background-image: url(../images/riomaggior%20-f.png);
+    background-position: center;
+}
+
+.image_left_left {
+    width: 50%;
+    height: 470px;
+    background-image: url(../images/cinque-terra-a.png);
+}
+
+.image_left_right {
+    width: 50%;
+    height: 470px;
+    background-image: url(../images/boats-b.png);
+}
+
+.image_right_left {
+    width: 50%;
+    height: 470px;
+    background-image: url(../images/riomaggiore-1783024_1280.png);
+    background-position: center;
+}
+
+.image_right_right {
+    width: 50%;
+    height: 470px;
+    background-image: url(../images/italy-d.png);
+    background-position: center;
+}
+
+.image_right_down {
+    width: 100%;
+    height: 470px;
+    background-image: url(../images/cinque-terre-c.png);
+}
+
+//footer
+
+footer {
+    min-height: 80px;
+    background: white;
+    border-top: 2px dotted blue;
+}
+
+.style_footer p {
+    margin-top: 20px;
+        text-align: center;
+        color: darkblue;
+}
+
+.fontello_style {
+    margin-top: 10px;
+     display: flex;
+    justify-content: center;
+    }   
+    
+
+i {
+    font-size: 2em;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-facebook-rect {
+    color: 	#3b5998; 
+}
+
+.icon-github-circled-alt2 {
+    color: #24292e;
+}
+
+.icon-linkedin {
+    color: #0077B5;
+}
