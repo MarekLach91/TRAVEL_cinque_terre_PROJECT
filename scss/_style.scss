@@ -40,7 +40,7 @@ header {
 .menu_style {
     margin-left: 4px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     justify-content: center;
     max-width: 1400px;
 }
@@ -68,6 +68,7 @@ ul li a {
 }
 
 .menu_list_three:hover~hr {
+    margin-left: 39%;
     margin-left: 39%;
     hr {
         color: white;
@@ -143,6 +144,14 @@ h1::after {
     min-height: 600px;
     position: relative;
     margin-top: 30px;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
 }
 
 h2 {
@@ -154,6 +163,7 @@ h2 {
 h3 {
     font-size: 2.5em;
     text-align: center;
+    color: orangered;
     margin: 10px 0 10px 0;
 }
 
@@ -169,30 +179,35 @@ h3 {
     font-size: 2em;
 }
 
-
-  .map {
-   background:transparent; 
-   position:relative; 
-   width:100%;
-   height:480px;  
-   pointer-events: none;
-   
+.map {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 480px;
+    pointer-events: none;
+    display: flex;
 }
+
+iframe {
+    justify-content: center;
+    width: 100%;
+}
+
 .map_scroll {
     pointer-events: auto;
 }
 
 .sec_two {
-    background-image:url(../images/cinque-terre-1859688_1920.png);
+    background-image: url(../images/cinque-terre-1859688_1920.png);
     min-height: 1000px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .sec_three {
-    min-height: 1000px;
+    min-height: 1500px;
+    background-image: url(../images/fresno-1932212_1920.png);
 }
 
 .three_style {
@@ -203,76 +218,154 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
+    z-index: 0;
+    
 }
+
+.all_style:hover {
+    z-index: 1;
+}
+
+//left images
 
 .image_left_top {
     width: 100%;
     height: 470px;
-    background-image: url(../images/riomaggior%20-f.png);
-    background-position: center;
+    background-image: url(../images/manarola_2_.png);
 }
 
-.image_left_left {
+.image_left_mdl {
     width: 50%;
     height: 470px;
     background-image: url(../images/cinque-terra-a.png);
 }
 
-.image_left_right {
+.image_right_mdl {
+    width: 50%;
+    height: 470px;
+    background-image: url(../images/arc-929380_640.png);
+}
+
+.image_down {
+    width: 100%;
+    height: 470px; 
+    background-image: url(../images/Riomaggiore_2_.png)
+}
+
+//right images
+
+.image_right_left {
     width: 50%;
     height: 470px;
     background-image: url(../images/boats-b.png);
 }
 
-.image_right_left {
-    width: 50%;
-    height: 470px;
-    background-image: url(../images/riomaggiore-1783024_1280.png);
-    background-position: center;
-}
-
 .image_right_right {
     width: 50%;
     height: 470px;
-    background-image: url(../images/italy-d.png);
-    background-position: center;
+    background-image: url(../images/Monterosso.png);
 }
 
-.image_right_down {
+.image_mdl {
     width: 100%;
     height: 470px;
-    background-image: url(../images/cinque-terre-c.png);
+     background-image: url(../images/riomaggior%20-f.png);
+}
+.down_right_left {
+    width: 50%;
+    height: 470px;
+    background-image: url(../images/houses-1516855_640.png);
+}
+.down-right_down {
+    width: 50%;
+    height: 470px;
+   background-image: url(../images/riomaggiore-1783024_1280.png);
+}
+
+.hoverstyle {
+    background-position: center;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.hoverstyle:hover {
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.efect:hover::after {
+    z-index: 2;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.efect {
+    position: relative;
+}
+
+.efect::after {
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    background: rgba(24, 188, 156, .9);
+    color: #fff;
+    content: attr(data-title);
+    line-height: 1.5em;
+    overflow: hidden;
+    padding: 14em .5em;
+    text-overflow: ellipsis;
+    white-space: pre;
+    transition: all 1s ease;
+    left: 10%;
+}
+
+
+
+
+.conteinerspecial {
+    max-width: 1800px;
 }
 
 //footer
-
 footer {
     min-height: 80px;
-    background: white;
+    background-image: url(../images/fresno-1932212_1920.png);
     border-top: 2px dotted blue;
 }
 
 .style_footer p {
     margin-top: 20px;
-        text-align: center;
-        color: darkblue;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
 }
 
 .fontello_style {
     margin-top: 10px;
-     display: flex;
+    display: flex;
     justify-content: center;
-    }   
-    
+}
 
 i {
+    padding: 2px;
     font-size: 2em;
     justify-content: center;
     text-align: center;
 }
 
+i:hover {
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
 .icon-facebook-rect {
-    color: 	#3b5998; 
+    color: #3b5998;
 }
 
 .icon-github-circled-alt2 {
