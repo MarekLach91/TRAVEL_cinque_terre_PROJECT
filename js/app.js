@@ -1,10 +1,29 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+//document.addEventListener("DOMContentLoaded", function(event) {
+//
+//var map = document.querySelector('.map');
+//console.log(map);
 
-var map = document.querySelector('.map');
-console.log(map);
 
-
-
+//$(document).ready(function() { 
+ 
+	$('a[href^="#"]').on('click', function(event) {
+	
+		var target = $( $(this).attr('href') );
+	
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+		}
+	});
+ 
+//});
+    
+    
+    
+    
+    
 //$('.map')
 //	.click(function(){
 //			$(this).find('iframe').addClass('map_scroll')})
@@ -12,5 +31,10 @@ console.log(map);
 //			$(this).find('iframe').removeClass('map_scroll')});
 ////
 //onClick="style.pointerEvents='none'"
+    
+    
+    
+    
+    
     
 });

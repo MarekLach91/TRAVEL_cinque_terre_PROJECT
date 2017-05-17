@@ -141,6 +141,7 @@ h1::after {
 }
 
 .sec_one {
+    z-index: 5;
     min-height: 600px;
     position: relative;
     margin-top: 30px;
@@ -154,11 +155,57 @@ h1::after {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
 }
 
-h2 {
+.icon-down-big {
+    text-decoration: none;
+    color: dimgrey;
+    opacity: 0.5;
     font-size: 3em;
     margin-top: 20px;
     text-align: center;
 }
+
+.box_icon {
+    margin-top: 670px;
+    position: relative;
+}
+
+box_icon_sec {
+margin-top: 100px;
+    position: relative;
+}
+
+.icon-down-big {
+    right: 50%;
+    left: 50%;
+    margin-left: -35px;
+   position: absolute;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 100%;
+    position :relative;
+    opacity: 0.7;
+    -webkit-animation: mymove 2s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 2s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0%   {top: 50px;}
+    50% {top: 100px;}
+    100%  {top: 50px;}
+  
+}
+
+///* Standard syntax */
+//@keyframes mymove {
+//    0%   {top: 0px;}
+//    25%  {top: 200px;}
+//    75%  {top: 50px}
+//    100% {top: 100px;}
+//}
+
+
 
 h3 {
     font-size: 2.5em;
@@ -198,6 +245,7 @@ iframe {
 }
 
 .sec_two {
+    z-index: 5;
     background-image: url(../images/cinque-terre-1859688_1920.png);
     min-height: 1000px;
     background-attachment: fixed;
@@ -208,6 +256,8 @@ iframe {
 .sec_three {
     min-height: 1500px;
     background-image: url(../images/fresno-1932212_1920.png);
+    position: relative;
+    z-index: 5;
 }
 
 .three_style {
@@ -370,10 +420,10 @@ i:hover {
     color: #3b5998;
 }
 
-.icon-github-circled-alt2 {
+.icon-github-circled {
     color: #24292e;
 }
 
-.icon-linkedin {
+.icon-linkedin-rect {
     color: #0077B5;
 }
