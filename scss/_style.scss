@@ -36,7 +36,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+@media (max-width: 800px) {
+    header {
+    border-top: 10px solid black;
+    }
+}
 .menu_style {
     margin-left: 4px;
     position: fixed;
@@ -165,7 +169,7 @@ h1::after {
 }
 
 .box_icon {
-    margin-top: 670px;
+    margin-top: 650px;
     position: relative;
 }
 
@@ -197,15 +201,6 @@ margin-top: 100px;
   
 }
 
-///* Standard syntax */
-//@keyframes mymove {
-//    0%   {top: 0px;}
-//    25%  {top: 200px;}
-//    75%  {top: 50px}
-//    100% {top: 100px;}
-//}
-
-
 
 h3 {
     font-size: 2.5em;
@@ -219,11 +214,34 @@ h3 {
     span {
         font-weight: bold;
     }
+    p {
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+     text-indent: 15px;  
+            -webkit-transition: all .5s ease-in-out;
+}
+    p:hover {
+        
+        box-shadow: 0 25px 50px rgba(0,0,0,.2);
+    border-color: #fff;
+    background-color: #fff;
+    }
 }
 
 .link_official {
-    color: green;
-    font-size: 2em;
+    margin-left: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: deepskyblue;
+    color: white;
+    font-size: 1.5em;
+}
+.link_official:hover {
+    background-color: dodgerblue;
+    transition: 1s;
+   
 }
 
 .map {
@@ -261,7 +279,7 @@ iframe {
 }
 
 .three_style {
-    margin: 40px 0 20px 0;
+    padding: 40px 0 20px 0;
 }
 
 .all_style {
@@ -272,6 +290,7 @@ iframe {
     z-index: 0;
     
 }
+
 
 .all_style:hover {
     opacity: 1;
