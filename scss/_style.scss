@@ -36,11 +36,13 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 @media (max-width: 800px) {
     header {
-    border-top: 10px solid black;
+        border-top: 10px solid black;
     }
 }
+
 .menu_style {
     margin-left: 4px;
     position: fixed;
@@ -146,17 +148,9 @@ h1::after {
 
 .sec_one {
     z-index: 5;
-    min-height: 600px;
+    min-height: 800px;
     position: relative;
-    margin-top: 30px;
-    background: rgba(255, 255, 255, 1);
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+    background: linear-gradient(#f5f5f5, #d8d8d8);
 }
 
 .icon-down-big {
@@ -174,7 +168,7 @@ h1::after {
 }
 
 box_icon_sec {
-margin-top: 100px;
+    margin-top: 100px;
     position: relative;
 }
 
@@ -182,25 +176,32 @@ margin-top: 100px;
     right: 50%;
     left: 50%;
     margin-left: -35px;
-   position: absolute;
+    position: absolute;
     width: 100px;
     height: 100px;
     background: white;
     border-radius: 100%;
-    position :relative;
+    position: relative;
     opacity: 0.7;
-    -webkit-animation: mymove 2s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation: mymove 2s infinite;
+    /* Safari 4.0 - 8.0 */
     animation: mymove 2s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    0%   {top: 50px;}
-    50% {top: 100px;}
-    100%  {top: 50px;}
-  
-}
 
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes mymove {
+    0% {
+        top: 50px;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 50px;
+    }
+}
 
 h3 {
     font-size: 2.5em;
@@ -215,16 +216,16 @@ h3 {
         font-weight: bold;
     }
     p {
+       line-height: 20px;
         padding: 20px;
         font-family: 'Roboto', sans-serif;
-     text-indent: 15px;  
-            -webkit-transition: all .5s ease-in-out;
-}
+        text-indent: 15px;
+        -webkit-transition: all .5s ease-in-out;
+    }
     p:hover {
-        
-        box-shadow: 0 25px 50px rgba(0,0,0,.2);
-    border-color: #fff;
-    background-color: #fff;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, .2);
+        border-color: #fff;
+        background-color: #fff;
     }
 }
 
@@ -238,10 +239,10 @@ h3 {
     color: white;
     font-size: 1.5em;
 }
+
 .link_official:hover {
     background-color: dodgerblue;
     transition: 1s;
-   
 }
 
 .map {
@@ -249,17 +250,11 @@ h3 {
     position: relative;
     width: 100%;
     height: 480px;
-    pointer-events: none;
     display: flex;
-}
-
-iframe {
-    justify-content: center;
-    width: 100%;
-}
-
-.map_scroll {
-    pointer-events: auto;
+    iframe {
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 .sec_two {
@@ -271,9 +266,22 @@ iframe {
     background-size: cover;
 }
 
+.map_draw {
+    margin-top: 100px;
+    background-image: url(../images/dsadsadsss.png);
+        height: 800px;
+    width: 100%;
+       background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    opacity: 0.8;
+    
+}
+
 .sec_three {
     min-height: 1500px;
-    background-image: url(../images/fresno-1932212_1920.png);
+    background: linear-gradient(#f5f5f5, #d8d8d8);
     position: relative;
     z-index: 5;
 }
@@ -282,15 +290,15 @@ iframe {
     padding: 40px 0 20px 0;
 }
 
+
+
 .all_style {
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
     opacity: 0.7;
     z-index: 0;
-    
 }
-
 
 .all_style:hover {
     opacity: 1;
@@ -298,7 +306,6 @@ iframe {
 }
 
 //left images
-
 .image_left_top {
     width: 100%;
     height: 470px;
@@ -319,12 +326,11 @@ iframe {
 
 .image_down {
     width: 100%;
-    height: 470px; 
+    height: 470px;
     background-image: url(../images/Riomaggiore_2_.png)
 }
 
 //right images
-
 .image_right_left {
     width: 50%;
     height: 470px;
@@ -340,17 +346,19 @@ iframe {
 .image_mdl {
     width: 100%;
     height: 470px;
-     background-image: url(../images/riomaggior%20-f.png);
+    background-image: url(../images/riomaggior%20-f.png);
 }
+
 .down_right_left {
     width: 50%;
     height: 470px;
     background-image: url(../images/houses-1516855_640.png);
 }
+
 .down-right_down {
     width: 50%;
     height: 470px;
-   background-image: url(../images/riomaggiore-1783024_1280.png);
+    background-image: url(../images/riomaggiore-1783024_1280.png);
 }
 
 .hoverstyle {
@@ -395,9 +403,6 @@ iframe {
     left: 10%;
 }
 
-
-
-
 .conteinerspecial {
     max-width: 1800px;
 }
@@ -405,15 +410,17 @@ iframe {
 //footer
 footer {
     min-height: 80px;
-    background-image: url(../images/fresno-1932212_1920.png);
-    border-top: 2px dotted blue;
+    background: linear-gradient(#f5f5f5, #d8d8d8);
+    border-top: 2px solid blue;
 }
 
 .style_footer p {
+   font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     margin-top: 20px;
     text-align: center;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .fontello_style {

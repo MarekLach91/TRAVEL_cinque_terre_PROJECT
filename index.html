@@ -29,8 +29,9 @@
                     <h2></h2>
                 </div>
             </div>
+            <div class="clearfix"></div>
             <div class="col-12 box_icon">
-            <a href="#middle" class="icon-down-big"></a>
+                <a href="#middle" class="icon-down-big"></a>
             </div>
         </div>
     </header>
@@ -40,7 +41,7 @@
             <div class="col-6">
                 <div class="one_text">
                     <h3>About</h3>
-                    <p>The <span>Cinque Terre</span>- is a rugged portion of coast on the Italian Riviera. It is in the Liguria region of Italy, to the west of the city of La Spezia, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore. The coastline, the five villages, and the surrounding hillsides are all part of the Cinque Terre National Park and is a UNESCO World Heritage Site.</p>
+                    <p>The <span>Cinque Terre</span>- is a rugged portion of coast on the Italian Riviera. It is in the Liguria region of Italy, to the west of the city of La Spezia, and comprises five villages: <span>Monterosso al Mare,</span> <span>Vernazza,</span> <span>Corniglia, Manarola,</span> and <span>Riomaggiore</span>. The coastline, the five villages, and the surrounding hillsides are all part of the Cinque Terre National Park and is a UNESCO World Heritage Site.</p>
                     <br>
                     <p>Over the centuries, people have carefully built terraces on the rugged, steep landscape right up to the cliffs that overlook the sea. Part of its charm is the lack of visible corporate development. Paths, trains and boats connect the villages, and cars cannot reach them from the outside. The Cinque Terre area is a very popular tourist destination.</p>
                     <br>
@@ -52,20 +53,23 @@
             <div class="col-6">
                 <h3>Location</h3>
                 <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28868.609703138274!2d9.703166443599315!3d44.12196503210352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x523d7a56422ed6ab!2sParco+Nazionale+delle+Cinque+Terre!5e0!3m2!1spl!2spl!4v1494347021820" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28868.609703138274!2d9.703166443599315!3d44.12196503210352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x523d7a56422ed6ab!2sParco+Nazionale+delle+Cinque+Terre!5e0!3m2!1spl!2spl!4v1494347021820" frameborder="0" zoom="5" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
+        <div class="clearfix"></div>
     </section>
     <!--    section two-->
     <section class="sec_two">
         <div class="container">
-        <div class="col-12 box_icon_sec">
-            <a href="#bottom" class="icon-down-big"></a>
+            <div class="col-12 box_icon_sec">
+                <a href="#bottom" class="icon-down-big"></a>
             </div>
+            <div class="col-12 map_draw"></div>
         </div>
+         <div class="clearfix"></div>
     </section>
-    <section class="sec_three" id="bottom" >
+    <section class="sec_three" id="bottom">
         <div class="container conteinerspecial">
             <div class="col-6 three_style">
                 <div data-title="Manarola" class="image_left_top all_style hoverstyle efect"></div>
@@ -95,31 +99,27 @@
             </div>
         </div>
     </footer>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/app.js"></script>
-   
+
     <script>
-    $(document).ready(function() { 
- 
-	$('a[href^="#"]').on('click', function(event) {
-	
-		var target = $( $(this).attr('href') );
-	
-		if( target.length ) {
-			event.preventDefault();
-			$('html, body').animate({
-				scrollTop: target.offset().top
-			}, 1000);
-		}
-	});
- 
-});
-    
-    
-    
-    
-    
-    
+        $(document).ready(function() {
+
+            $('a[href^="#"]').on('click', function(event) {
+
+                var target = $($(this).attr('href'));
+
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+
+        });
+
     </script>
 </body>
+
 </html>
