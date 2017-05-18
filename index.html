@@ -20,7 +20,7 @@
                 <li class="menu_list_three"><a href="#">corniglia</a></li>
                 <li class="menu_list_four"><a href="#">manarola</a></li>
                 <li class="menu_list_five"><a href="#">riomaggiore</a></li>
-                <hr/>
+                <hr>
             </ul>
             <div id="nav-icon1">
                 <span></span>
@@ -122,13 +122,17 @@
             });
 
         });
+   
         
-    
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-		$(this).toggleClass('open');
-	
-});
+        
+        $('#nav-icon1').click(function() {
+            $(this).toggleClass('open')
+            $(".menu_style").toggleClass('open_list');
 
+        });
+
+        
+        
     </script>
 </body>
 
