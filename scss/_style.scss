@@ -112,8 +112,8 @@ hr {
 
 #nav-icon1 {
     z-index: 10;
-    width: 65px;
-    height: 55px;
+    width: 55px;
+    height: 45px;
     border-radius: 5px;
   position: fixed;
     top: 20px;
@@ -134,9 +134,9 @@ hr {
 #nav-icon1 span {
   display: block;
   position: absolute;
-  height: 7px;
+  height: 5px;
     width: 80%;
-  margin: 6px 0 0 6px;
+  margin: 8px 0 0 6px;
   background-color: white;
   border-radius: 7px;
   opacity: 1;
@@ -156,11 +156,11 @@ hr {
 }
 
 #nav-icon1 span:nth-child(2) {
-  top: 18px;
+  top: 12px;
 }
 
 #nav-icon1 span:nth-child(3) {
-  top: 36px;
+  top: 24px;
 }
 
 #nav-icon1.open span:nth-child(1) {
