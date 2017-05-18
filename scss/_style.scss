@@ -87,12 +87,6 @@ ul li a {
     margin-left: 77.5%;
 }
 
-@media (max-width: 800px) {
-    ul {
-        display: none;
-    }
-}
-
 hr {
     height: .25rem;
     width: 19%;
@@ -108,6 +102,101 @@ hr {
     border: none;
     transition: .3s ease-in-out;
 }
+@media (max-width: 800px) {
+    ul {
+        display: none;
+    }
+}
+
+//hamburger & anime
+
+#nav-icon1 {
+    z-index: 10;
+    width: 65px;
+    height: 55px;
+    border-radius: 5px;
+  position: fixed;
+    top: 20px;
+    right: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+//  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 7px;
+    width: 80%;
+  margin: 6px 0 0 6px;
+  background-color: white;
+  border-radius: 7px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 18px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 36px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+@media (min-width: 801px) {
+    #nav-icon1 {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
 
 .box_h1 {
     //    margin-top: 40px;
@@ -272,7 +361,7 @@ h3 {
 }
 
 .map_draw {
-    margin-top: 100px;
+    margin: 100px 0 100px 0;
     background-image: url(../images/dsadsadsss.png);
     height: 80vh;
     width: 100%;
