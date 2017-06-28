@@ -29,7 +29,7 @@
             </div>
             <div class="col-12">
                 <div class="box_h1">
-                    <h1>Cine Terre</h1>
+                    <h1>Cinque Terre</h1>
                 </div>
             </div>
             <div class="col-12 box_icon">
@@ -121,16 +121,21 @@
                 }
             });
 
-        });
-
 
 
         $('#nav-icon1').click(function() {
-            $(this).toggleClass('open')
+            $(this).toggleClass('open');
             $(".menu_style").toggleClass('open_list');
 
         });
-
+        
+        $( "a" ).click(function( event ) {
+  event.preventDefault();
+        });
+            
+     
+        
+        });
     </script>
 </body>
 

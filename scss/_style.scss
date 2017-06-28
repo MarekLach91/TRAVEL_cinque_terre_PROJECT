@@ -38,7 +38,6 @@ header {
     background-size: cover;
 }
 
-@media (max-width: 800px) {}
 
 .menu_style {
     margin-left: 4px;
@@ -102,7 +101,7 @@ hr {
     transition: .3s ease-in-out;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 799px) {
     ul {
         display: none;
     }
@@ -183,15 +182,11 @@ hr {
     transform: rotate(-135deg);
 }
 
-@media (min-width: 801px) {
-    #nav-icon1 {
-        display: none;
-    }
-}
 
 .open_list {
     display: grid;
     top: 10px;
+    -ms-top: 10px;
     z-index: 10;
     a {
         z-index: 10;
@@ -205,6 +200,19 @@ hr {
     }
     hr {
         display: none;
+    }
+}
+
+
+@media (min-width: 800px) {
+    #nav-icon1 {
+        display: none;
+    }
+    .open_list {
+       display: none; 
+    }
+    .menu_style {
+       position: fixed; 
     }
 }
 
